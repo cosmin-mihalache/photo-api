@@ -29,12 +29,13 @@ async function fetchApi(url) {
 
 function generatePictures(data) {
   data.photos.forEach((photo) => {
+    console.log(photo);
     const galleryImg = document.createElement('div');
     galleryImg.classList.add('gallery-img');
     galleryImg.innerHTML = `
           <div class='gallery-info'>
-          <p>${photo.photographer}</p
-          <a href=${photo.src.original}>Download</a> 
+          <a href=${photo.photographer_url} target="_blank">${photo.photographer}</a>
+          <a href=${photo.src.original} target="_blank">Download</a> 
           </div>
           <img src=${photo.src.large}></img>
           `;

@@ -24,7 +24,8 @@ header h2 {
 
 #logo {
   text-decoration: none;
-  color: black;
+  color: rgba(255, 255, 255, 0.900);
+  font-size: 2rem;
 }
 
 .search-form {
@@ -45,7 +46,7 @@ header h2 {
   padding: 1rem 1.5rem;
   font-size: 1.3rem;
   background-color: rgb(89, 89, 161);
-  color: white;
+  color: rgba(255, 255, 255, 0.900);
   cursor: pointer;
 }
 
@@ -53,12 +54,12 @@ header h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: rgb(92, 92, 92);
+  font-size: 1.2rem;
   padding: 0.5rem;
 }
 
 .gallery-info a {
-  color: rgb(92, 92, 92);
+  color: rgba(255, 255, 255, 0.900);
 }
 
 .gallery-info a:first-child {
@@ -81,6 +82,11 @@ header h2 {
   height: 100%;
   object-fit: cover;
 }
+
+.gallery-img img {
+  box-shadow: 0px 2px 3px rgba(255, 255, 255, 0.900);
+}
+
 .nav-button {
   min-height: 30vh;
   display: flex;
@@ -91,7 +97,7 @@ header h2 {
 .more {
   padding: 1rem 2.1rem;
   background-color: rgb(89, 89, 161);
-  color: white;
+  color: rgba(255, 255, 255, 0.900);
   border: none;
   font-size: 1.3rem;
   cursor: pointer;
